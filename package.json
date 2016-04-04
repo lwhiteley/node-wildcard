@@ -1,0 +1,30 @@
+{
+  "name": "node-wildcard",
+  "version": "0.0.1",
+  "description": "simple wildcard matcher for string, arrays and objects ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwhiteley/node-wildcard.git"
+  },
+  "keywords": [
+    "wildcard",
+    "wildcard2",
+    "string",
+    "matcher",
+    "matching"
+  ],
+  "author": "Layton Whiteley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwhiteley/node-wildcard/issues"
+  },
+  "homepage": "https://github.com/lwhiteley/node-wildcard#readme",
+  "dependencies": {
+    "lodash.foreach": "^4.2.0",
+    "wildcard2": "0.0.2"
+  }
+}
