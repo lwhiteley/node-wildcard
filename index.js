@@ -1,7 +1,7 @@
 var forEach = require('lodash.foreach'),
     includes = require('lodash.includes'),
     wildcardMatcher = require('wildcard2'),
-    allowedTypes = ['number', 'boolean', 'regexp'],
+    allowedNonStringTypes = ['number', 'boolean', 'regexp'],
     matchers = {},
     itypeof = function (val) {
         return Object.prototype.toString.call(val).replace(/(\[|object|\s|\])/g, '').toLowerCase();
@@ -10,7 +10,7 @@ var forEach = require('lodash.foreach'),
 var normalize = function(value, options){
   if(itypeof(options) === 'object' &&
       itypeof(options.include) === 'array' &&
-      includes(allowedTypes, itypeof(value)) &&
+      includes(allowedNonStringTypes, itypeof(value)) &&
       includes(options.include, itypeof(value))){
     value = value.toString();
   }
