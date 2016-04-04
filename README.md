@@ -19,9 +19,9 @@ console.log(wildcard('a', 'a.*' )) // => false
 console.log(wildcard('a.', 'a.*' )) // => true
 console.log(wildcard(testObj, 'a.*' )) // => { 'a.b': {} }
 console.log(wildcard(testArray, 'a.*' )) // => [ 'a.b' ]
-console.log(wildcard(1233, '123*' , options)) // => false
-console.log(wildcard(false, 'fal*' , options)) // => false
-console.log(wildcard(/false/, '*fal*' , options)) // => false
+console.log(wildcard(1233, '123*')) // => false
+console.log(wildcard(false, 'fal*')) // => false
+console.log(wildcard(/false/, '*fal*')) // => false
 
 //with options
 // include property must be an array
