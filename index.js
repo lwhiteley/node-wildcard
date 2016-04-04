@@ -8,7 +8,7 @@ var forEach = require('lodash.foreach'),
     };
 
 var normalize = function(value, options){
-  if(!itypeof(value) !== 'string' &&
+  if(itypeof(value) !== 'string' &&
       itypeof(options) === 'object' &&
       itypeof(options.include) === 'array' &&
       includes(allowedNonStringTypes, itypeof(value)) &&
