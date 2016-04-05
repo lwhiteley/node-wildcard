@@ -7,7 +7,7 @@ This module has the ability to pass in options to include non string values to b
 
 Allowed non-string types for inclusion are: `number`, `boolean`, `regexp`
 
-There are also special non-string types that return `filtered collections` instead a `bool`.
+There are also special non-string types that return `filtered collections` instead of a `boolean`.
 
 Special non-string types: `array`, `object`
 

@@ -51,7 +51,7 @@ test('node-wildcard suite: ', function (t) {
         t.end();
     });
 
-    t.test('when wildcard is called object as passed value: ', function (t) {
+    t.test('when wildcard is called with object as passed value: ', function (t) {
       var testObj = {
         'a.b': {},
         'a': {},
@@ -72,7 +72,7 @@ test('node-wildcard suite: ', function (t) {
         t.end();
     });
 
-    t.test('when wildcard is called array as passed value: ', function (t) {
+    t.test('when wildcard is called with array as passed value: ', function (t) {
 
       var expected = ['a.b']
       var testArray = ['a.b', 'a']
