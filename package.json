@@ -1,10 +1,10 @@
 {
   "name": "node-wildcard",
-  "version": "0.0.6",
-  "description": "simple wildcard matcher for string, arrays and objects ",
+  "version": "0.0.7",
+  "description": "simple wildcard matcher for string, arrays and objects, ... etc.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap -R spec specs/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "lodash.foreach": "^4.2.0",
     "lodash.includes": "^4.1.2",
     "wildcard2": "0.0.2"
+  },
+  "devDependencies": {
+    "tap": "^5.7.0"
   }
 }

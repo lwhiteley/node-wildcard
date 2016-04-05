@@ -47,12 +47,9 @@ matchers.array = function(array, wildcard, options){
 
 module.exports = function(value, wildcard, options){
   var type = itypeof(value);
-  var result = null;
+  var result = false;
   if(matchers[type]){
     result = matchers[type](value, wildcard, options);
-  }
-  if(!result){
-    return false;
   }
   return result;
 };
