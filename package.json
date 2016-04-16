@@ -1,6 +1,6 @@
 {
   "name": "node-wildcard",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "simple wildcard matcher for string, arrays and objects, ... etc.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/lwhiteley/node-wildcard#readme",
   "dependencies": {
+    "itypeof": "^1.0.1",
     "lodash.foreach": "^4.2.0",
     "lodash.includes": "^4.1.2",
     "wildcard2": "0.0.2"
